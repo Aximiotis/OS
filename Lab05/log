@@ -1,0 +1,106 @@
+Value of x: 10
+Address of x: 0x7ffc857e6aec
+Value of p: 0x7ffc857e6aec
+Value pointed to by p: 10
+New value of x: 20
+Value of a: 5
+Value of b: 100
+After *ptr = 10, a: 10, b: 100
+After *ptr = 200, a: 10, b: 200
+arr[0] = 10
+arr[1] = 20
+arr[2] = 30
+arr[3] = 40
+arr[4] = 50
+*(p + 0) = 10
+*(p + 1) = 20
+*(p + 2) = 30
+*(p + 3) = 40
+*(p + 4) = 50
+Before swap: x = 5, y = 10
+After swap: x = 10, y = 5
+arr[0] = 10
+arr[1] = 20
+arr[2] = 30
+arr[3] = 40
+arr[4] = 50
+/home/dimiaxim/Lab05
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+example1.c
+example2.c
+example3.c
+example4.c
+example5.c
+example6.c
+Lab05.tar.gz
+log
+new_folder
+pwd
+stat: cannot stat 'filename': No such file or directory
+cp: cannot stat 'source.txt': No such file or directory
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+mv: cannot stat 'oldname.txt': No such file or directory
+rm: cannot remove 'file_to_delete.txt': No such file or directory
+rmdir: failed to remove 'empty_directory': No such file or directory
+rmdir: failed to remove 'myfolder': No such file or directory
+rm: cannot remove 'oldname.txt': No such file or directory
+cat: file.txt: No such file or directory
+#include <stdio.h>
+
+int main(void) {
+    int x = 10;      // A normal integer variable
+    int *p;          // p is a pointer to an integer
+
+    p = &x;          // p now holds the address of x
+
+    printf("Value of x: %d\n", x);
+    printf("Address of x: %p\n", (void*)&x);
+    printf("Value of p: %p\n", (void*)p);
+    printf("Value pointed to by p: %d\n", *p);
+
+    *p = 20;         // Change the value of x using the pointer
+    printf("New value of x: %d\n", x);
+
+    return 0;
+}
+#include <stdio.h>
+
+int main(void) {
+    int x = 10;      // A normal integer variable
+    int *p;          // p is a pointer to an integer
+
+    p = &x;          // p now holds the address of x
+
+    printf("Value of x: %d\n", x);
+    printf("Address of x: %p\n", (void*)&x);
+    printf("Value of p: %p\n", (void*)p);
+    printf("Value pointed to by p: %d\n", *p);
+
+    *p = 20;         // Change the value of x using the pointer
+    printf("New value of x: %d\n", x);
+
+    return 0;
+}
+#include <stdio.h>
+
+int main(void) {
+    int x = 10;      // A normal integer variable
+    int *p;          // p is a pointer to an integer
+
+    p = &x;          // p now holds the address of x
+
+    printf("Value of x: %d\n", x);
+    printf("Address of x: %p\n", (void*)&x);
+    printf("Value of x: %d\n", x);
+    printf("Address of x: %p\n", (void*)&x);
+    printf("Value of p: %p\n", (void*)p);
+    printf("Value pointed to by p: %d\n", *p);
+
+    *p = 20;         // Change the value of x using the pointer
+    printf("New value of x: %d\n", x);
+
+    return 0;
+}
+/home/dimiaxim/Lab05
